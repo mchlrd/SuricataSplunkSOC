@@ -101,6 +101,7 @@ alert tcp any any -> any any (msg:"Port scan detected"; threshold:type both, tra
 alert tcp any any -> any any (flags:0; msg:"Null scan detected"; sid:1000005; rev:1;)
 alert tcp any any -> any any (flags:F; msg:"FIN scan detected"; sid:1000006; rev:1;)
 ```
+![Rules](ScreenshotsSplunkSuricata/rules.png)
 ## 🚀 Service Activation
 
 1.  **Include local rules** in `suricata.yaml`:
@@ -153,6 +154,11 @@ index=main sourcetype=suricata source="/var/log/suricata/fast.log"
 | stats count by src_ip
 | sort -count
 ```
+![Indexing](ScreenshotsSplunkSuricata/indexing.png)
+
+### Dashboard Example
+
+![Xmpl](ScreenshotsSplunkSuricata/dashboardexmpl.png)
 ## 🧪 Testing & Validation
 
 To verify the integration, generate various types of traffic from the **Kali VM (Attacker)** to the **Windows VM (Target)**.
