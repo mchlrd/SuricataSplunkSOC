@@ -1,4 +1,4 @@
-# Home SOC Lab with Suricata IDS and Splunk Visualization
+# Home SOC Lab with Suricata IDS and Splunk Enterprise
 
 ## Overview
 
