@@ -121,7 +121,7 @@ alert tcp any any -> any any (flags:F; msg:"FIN scan detected"; sid:1000006; rev
 
 ---
 
-![Initialization](Screenshots_for_Splunk&Suricata/initialids.png)
+![Initialization](ScreenshotsSplunkSuricata/initialids.png)
 
 ## 🛡️ Splunk Enterprise Configuration
 Install Splunk and configure it to ingest Suricata logs for visualization.
